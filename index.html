@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Goal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <h2>Financial Goal Calculator</h2>
+
+        <div class="toggle-container">
+            <button id="sipBtn" class="toggle-btn active" onclick="setMode('SIP')">SIP</button>
+            <button id="lumpsumBtn" class="toggle-btn" onclick="setMode('Lumpsum')">Lumpsum</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="target">Target Goal Amount (₹)</label>
+            <input type="text" id="target" inputmode="numeric" placeholder="e.g. 10,00,000">
+        </div>
+
+        <div class="input-group">
+            <label for="rate">Expected Returns (% per annum)</label>
+            <input type="text" id="rate" inputmode="numeric" placeholder="e.g. 12">
+        </div>
+
+        <div class="input-group">
+            <label for="years">Time Period (in Years)</label>
+            <input type="text" id="years" inputmode="numeric" placeholder="e.g. 10">
+        </div>
+
+        <button class="calc-btn" onclick="calculate()"><b>Calculate</b></button>
+
+        <div class="results" id="results" style="display: none;">
+            <div class="result-item total" id="primaryRow">
+                <span id="resultLabel">Monthly SIP Required:</span>
+                <span id="primaryResult">₹0</span>
+            </div>
+            <div class="result-item" id="totalInvestedRow">
+                <span>Total Investment:</span>
+                <span id="totalInvested">₹0</span>
+            </div>
+            <div class="result-item" id="wealthGainedRow">
+                <span>Wealth Gained:</span>
+                <span id="wealthGained">₹0</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

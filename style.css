@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.calculator-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 { color: #333; margin-bottom: 20px; text-align: center; }
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.results {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.total {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* Add this to your existing CSS */
+.toggle-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    background-color: #e9ecef;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.toggle-btn.active {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.calc-btn {
+    margin-top: 10px;
+}
